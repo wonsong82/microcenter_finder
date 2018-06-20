@@ -117,7 +117,7 @@ class Microcenter {
         Mail::send('mails.openbox',compact('item', 'title'),function($m) use ($title, $item){
             $m->from('microcenter@wonsong.com', 'Microcenter Openbox');
             $m->to('wonsong82@gmail.com', 'Won Song');
-            //$m->cc('')
+            $m->cc('annako4u@gmail.com', 'Anna Ko');
             $m->subject('Microcenter Openbox: ' . $title . ': ' . $item->openbox_id);
         });
 

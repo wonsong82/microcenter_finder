@@ -9,7 +9,7 @@ class WebController extends Controller
 {
     public function index()
     {
-        $microcenter = new Microcenter();
-        $microcenter->find();
+        /*$microcenter = new Microcenter();
+        $microcenter->find();*/
     }
 }
